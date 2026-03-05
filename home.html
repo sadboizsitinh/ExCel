@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- 4 Cards -->
+  <div class="grid">
+
+    <div class="card" id="musicCard">
+        <div class="icon-box">
+            <img src = "img/music.png">
+        </div>
+        <p>Music</p>
+    </div>
+
+    <div class="card" id = "letterCard">
+        <div class="icon-box">
+            <img src = "img/letter.png">
+        </div>
+        <p>Letter</p>
+    </div>
+
+    <div class="card">
+        <div class="icon-box">
+           <img class = "spe" src = "img/image.png">
+        </div>
+        <p>Prettiest princess</p>
+    </div>
+
+    <div class="card">
+        <div class="icon-box">
+             <img src = "img/gift.png">
+        </div>
+        <p>Gift</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Music Modal -->
+<div class="modal" id="musicModal">
+  <div class="modal-content">
+    <button class="close-btn" id="closeBtn">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <div class="modal-header">
+      <p>MUSIC PLAYER</p>
+      <div class="player-img">
+        <i class="fas fa-compact-disc"></i>
+      </div>
+      <h3 class="song-title" id="songTitle">Ái Ngoại Anh</h3>
+    </div>
+
+    <!-- Player Controls -->
+    <div class="player-controls">
+      <div class="time-display">
+        <span class="current-time">0:00</span>
+        <span class="total-time">0:00</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <div class="buttons">
+        <button class="btn-control"><i class="fas fa-step-backward"></i></button>
+        <button class="btn-play"><i class="fas fa-play"></i></button>
+        <button class="btn-control"><i class="fas fa-step-forward"></i></button>
+      </div>
+    </div>
+
+    <!-- Song List -->
+    <div class="song-list">
+        <div class="song-item active" data-song="When Was Your Man">
+         <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23ff1493' width='100' height='100' rx='15'/%3E%3Ctext x='50' y='60' font-size='40' fill='white' text-anchor='middle' dominant-baseline='middle'%3E♪%3C/text%3E%3C/svg%3E" alt="song">
+         <div class="song-info">
+           <p class="song-name">When Was Your Man</p>
+           <p class="song-artist">Bruno Mars</p>
+         </div>
+         <i class="fas fa-circle-play"></i>
+       </div>
+
+      <div class="song-item active" data-song="Ai Ngoài Anh">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23ff1493' width='100' height='100' rx='15'/%3E%3Ctext x='50' y='60' font-size='40' fill='white' text-anchor='middle' dominant-baseline='middle'%3E♪%3C/text%3E%3C/svg%3E" alt="song">
+        <div class="song-info">
+          <p class="song-name">Ai Ngoài Anh (hở emmm) </p>
+          <p class="song-artist">VSTRA, Tyronee</p>
+        </div>
+        <i class="fas fa-circle-play"></i>
+      </div>
+
+
+      
+      <div class="song-item" data-song="Dạo Này">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23ff1493' width='100' height='100' rx='15'/%3E%3Ctext x='50' y='60' font-size='40' fill='white' text-anchor='middle' dominant-baseline='middle'%3E♪%3C/text%3E%3C/svg%3E" alt="song">
+          <div class="song-info">
+              <p class="song-name"> Dạo Này </p>
+              <p class="song-artist">Anh hỏi bbi đó, dạo này em sao rồi ạaa ??</p>
+            </div>
+            <i class="fas fa-circle-play"></i>
+        </div>
+
+        <div class="song-item" data-song="Ngủ Đúng Giờ">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23ff1493' width='100' height='100' rx='15'/%3E%3Ctext x='50' y='60' font-size='40' fill='white' text-anchor='middle' dominant-baseline='middle'%3E♪%3C/text%3E%3C/svg%3E" alt="song">
+          <div class="song-info">
+            <p class="song-name">Nàng nhớ ngủ đúng giờ nhớoo</p>
+            <p class="song-artist">Born to say: em Linh yêu dấu của anh ngụ nhon nhớoo</p>
+          </div>
+          <i class="fas fa-circle-play"></i>
+        </div>
+        
+      <div class="song-item" data-song="Có Hẹn Với Thanh Xuân">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23ff1493' width='100' height='100' rx='15'/%3E%3Ctext x='50' y='60' font-size='40' fill='white' text-anchor='middle' dominant-baseline='middle'%3E♪%3C/text%3E%3C/svg%3E" alt="song">
+        <div class="song-info">
+          <p class="song-name">Bài hát đầu tiên trong ngày đầu chúng mình gặp nhau </p>
+          <p class="song-artist">BBi em đoán thử xiemmm </p>
+        </div>
+        <i class="fas fa-circle-play"></i>
+      </div>
+
+       <div class="song-item" data-song="Thế Giới Của Anh">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23ff1493' width='100' height='100' rx='15'/%3E%3Ctext x='50' y='60' font-size='40' fill='white' text-anchor='middle' dominant-baseline='middle'%3E♪%3C/text%3E%3C/svg%3E" alt="song">
+        <div class="song-info">
+          <p class="song-name">Thế Giới Của Anh Sẽ Là Em Hay Là Một Ai Khác ?? </p>
+          <p class="song-artist"> Là Ở BBi Đóa BBi à, Em Nỡ Để Anh Yêu Thương Một Cô Gái Khác hưm ?? </p>
+        </div>
+        <i class="fas fa-circle-play"></i>
+      </div>
+
+
+      <div class="song-item" data-song="Quan Rap">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23ff1493' width='100' height='100' rx='15'/%3E%3Ctext x='50' y='60' font-size='40' fill='white' text-anchor='middle' dominant-baseline='middle'%3E♪%3C/text%3E%3C/svg%3E" alt="song">
+        <div class="song-info">
+          <p class="song-name"> Sent to you </p>
+          <p class="song-artist"> Ca sĩ này chỉ bít yêu em hoyy </p>
+        </div>
+        <i class="fas fa-circle-play"></i>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- Audio Element -->
+<audio id="audioPlayer">
+  <source type="audio/mpeg">
+</audio>
+
+<!-- Letter Modal -->
+<div class="modal" id="letterModal">
+  <div class="modal-content letter-modal">
+    <button class="close-btn" id="closeLetterBtn">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <!-- Decorative Bear -->
+    <div class="bear-decoration">
+      <div class="bear">
+        <div class="bear-head">
+          <div class="bear-ear bear-ear-left"></div>
+          <div class="bear-ear bear-ear-right"></div>
+          <div class="bear-eye bear-eye-left"></div>
+          <div class="bear-eye bear-eye-right"></div>
+          <div class="bear-nose"></div>
+        </div>
+        <div class="bear-body"></div>
+      </div>
+    </div>
+
+    <!-- Letter Content -->
+    <div class="letter-content">
+      <div class="letter-text">
+        <p class="letter-line">Gửi người cần giải anh yêu.</p>
+        <p class="letter-line">Cảm ơn em vì đã xuất hiện trong cuộc đời anh, vì những lúc em cười, những lúc em quan tâm và cả những lúc em chỉ ở bên anh một cách rất bình yên. Có em, những ngày bình thường của anh cũng trở nên đặc biệt hơn một chút. Hy vọng không chỉ hôm nay mà thật nhiều ngày sau này, anh vẫn có thể ở bên, cùng em trải qua những khoảnh khắc nhỏ bé nhưng ý nghĩa của cuộc sống.</p>
+       
+      </div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-hearts">
+      <span class="heart">💕</span>
+      <span class="heart">💖</span>
+      <span class="heart">💝</span>
+    </div>
+  </div>
+</div>
+
+<script src = "script2.js"></script>
+
+</body>
+</html>
