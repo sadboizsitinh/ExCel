@@ -704,7 +704,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-600%);
+    transform: translateX(-1200%);
   }
 }
 
