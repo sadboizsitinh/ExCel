@@ -171,15 +171,19 @@
 
 
   if (imageCard && imageModal) {
-    
     imageCard.addEventListener('click', () => {
       imageModal.classList.add('active');
       // Start animation
-      galleryTrack.style.animation = 'scroll-left 20s linear infinite';
+      galleryTrack.style.animation = 'scroll-left 80s linear infinite';
+      audioPlayer.src = "sound/thegioicuaanh.mp3"; 
+      audioPlayer.play();
     });
 
     if (closeImageBtn) {
+     
       closeImageBtn.addEventListener('click', () => {
+        audioPlayer.pause(); 
+        audioPlayer.src = "";
         imageModal.classList.remove('active');
       });
     }
@@ -189,9 +193,6 @@
         imageModal.classList.remove('active');
       }
     });
-    
-
-track.innerHTML += track.innerHTML;
   }
 
   const giftCard = document.getElementById('giftCard');

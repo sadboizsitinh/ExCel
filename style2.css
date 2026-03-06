@@ -696,7 +696,7 @@ body {
   display: flex;
   gap: 20px;
   padding: 10px 20px;
-  animation: scroll-left 0.5s linear infinite;
+  animation: scroll-left 80s linear infinite;
 }
 
 @keyframes scroll-left {
@@ -704,7 +704,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-300%);
+    transform: translateX(-600%);
   }
 }
 
