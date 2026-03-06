@@ -670,6 +670,56 @@ body {
 
 /* ==================== IMAGE GALLERY MODAL ==================== */
 
+.caption {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  right: 20px;
+
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+
+  text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: captionFade 1s ease forwards;
+}
+
+@keyframes captionFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-item:nth-child(1) .caption { animation-delay: 0.2s; }
+.gallery-item:nth-child(2) .caption { animation-delay: 1s; }
+.gallery-item:nth-child(3) .caption { animation-delay: 5.3s; }
+.gallery-item:nth-child(4) .caption { animation-delay: 9.6s; }
+.gallery-item:nth-child(5) .caption { animation-delay: 14.6s; }
+.gallery-item:nth-child(6) .caption { animation-delay: 19.6s; }
+.gallery-item:nth-child(7) .caption { animation-delay: 24.6s; }
+.gallery-item:nth-child(8) .caption { animation-delay: 29.6s; }
+.gallery-item:nth-child(9) .caption { animation-delay: 34.6s; }
+.gallery-item:nth-child(10) .caption { animation-delay: 39.6s; }
+.gallery-item:nth-child(11) .caption { animation-delay: 43.6s; }
+.gallery-item:nth-child(12) .caption { animation-delay: 48.6s; }
+
+.gallery-item {
+  position: relative;
+}
+
 .gallery-modal {
   min-height: 550px;
   display: flex;
