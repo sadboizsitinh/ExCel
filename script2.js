@@ -127,6 +127,7 @@
   const letterLines = document.querySelectorAll('.letter-line');
 
   if (letterCard && letterModal) {
+    // console.log("YES2");
     letterCard.addEventListener('click', () => {
       console.log('Letter card clicked');
       letterModal.classList.add('active');
@@ -156,6 +157,73 @@
     letterModal.addEventListener('click', (e) => {
       if (e.target === letterModal) {
         letterModal.classList.remove('active');
+      }
+    });
+  }
+
+
+  const imageCard = document.getElementById('imageCard');
+  const imageModal = document.getElementById('imageModal');
+  const closeImageBtn = document.getElementById('closeImageBtn');
+  const galleryTrack = document.querySelector('.gallery-track');
+
+
+
+
+  if (imageCard && imageModal) {
+    
+    imageCard.addEventListener('click', () => {
+      imageModal.classList.add('active');
+      // Start animation
+      galleryTrack.style.animation = 'scroll-left 20s linear infinite';
+    });
+
+    if (closeImageBtn) {
+      closeImageBtn.addEventListener('click', () => {
+        imageModal.classList.remove('active');
+      });
+    }
+
+    imageModal.addEventListener('click', (e) => {
+      if (e.target === imageModal) {
+        imageModal.classList.remove('active');
+      }
+    });
+    
+
+track.innerHTML += track.innerHTML;
+  }
+
+  const giftCard = document.getElementById('giftCard');
+  const giftModal = document.getElementById('giftModal');
+  const closeGiftBtn = document.getElementById('closeGiftBtn');
+  const giftVideo = document.getElementById('giftVideo');
+  const sparkles = document.querySelectorAll('.sparkle');
+
+  if (giftCard && giftModal) {
+    giftCard.addEventListener('click', () => {
+      giftModal.classList.add('active');
+      
+      // Reset emoji animation
+      sparkles.forEach(sparkle => {
+        sparkle.style.animation = 'none';
+        setTimeout(() => {
+          sparkle.style.animation = '';
+        }, 10);
+      });
+    });
+
+    if (closeGiftBtn) {
+      closeGiftBtn.addEventListener('click', () => {
+        giftModal.classList.remove('active');
+        giftVideo.pause();
+      });
+    }
+
+    giftModal.addEventListener('click', (e) => {
+      if (e.target === giftModal) {
+        giftModal.classList.remove('active');
+        giftVideo.pause();
       }
     });
   }

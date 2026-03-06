@@ -29,14 +29,14 @@
         <p>Letter</p>
     </div>
 
-    <div class="card">
+    <div class="card" id = "imageCard">
         <div class="icon-box">
            <img class = "spe" src = "img/image.png">
         </div>
         <p>Prettiest princess</p>
     </div>
 
-    <div class="card">
+    <div class="card" id = "giftCard">
         <div class="icon-box">
              <img src = "img/gift.png">
         </div>
@@ -193,6 +193,89 @@
     </div>
   </div>
 </div>
+
+<!-- Gift Modal-->
+<div class="modal" id="giftModal">
+  <div class="modal-content gift-modal">
+    
+    <button class="close-btn" id="closeGiftBtn">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <div class="video-wrapper">
+      <!-- Left Messages -->
+      <div class="messages-column left-messages">
+        <div class="message-item">Những câu chuyện</div>
+        <div class="message-item">Anh muốn được viết tiếp ...</div>
+      </div>
+
+      <div class="video-frame">
+        <div class="frame-decoration frame-top">
+          <span class="decoration-item">🎀</span>
+          <span class="decoration-item">💝</span>
+          <span class="decoration-item">🎀</span>
+        </div>
+        
+        <video id="giftVideo" controls width="100%">
+          <source src="video/vid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="frame-decoration frame-bottom">
+          <span class="decoration-item">✨</span>
+          <span class="decoration-item">💖</span>
+          <span class="decoration-item">✨</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Decorations -->
+    <div class="gift-sparkles">
+      <span class="sparkle">💖</span>
+      <span class="sparkle">✨</span>
+      <span class="sparkle">💖</span>
+      <span class="sparkle">✨</span>
+      <span class="sparkle">✨</span>
+      <span class="sparkle">💖</span>
+      <span class="sparkle">✨</span>
+      <span class="sparkle">💖</span>
+      <span class="sparkle">✨</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="imageModal">
+  <div class="modal-content gallery-modal">
+    <button class="close-btn" id="closeImageBtn">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <div class="gallery-container">
+      <div class="gallery-wrapper">
+        <div class="gallery-track">
+          
+          <div class="gallery-item">
+             <img src = "img/pic3.jpg">
+          </div>
+          <div class="gallery-item">
+             <img src = "img/pic4.jpg">
+          </div>
+          <div class="gallery-item">
+             <img src = "img/pic5.jpg">
+          </div>
+          <div class="gallery-item">
+             <img src = "img/pic5.jpg">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 <script src = "script2.js"></script>
 
